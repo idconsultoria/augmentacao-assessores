@@ -411,6 +411,7 @@ def gerar_mensagem_assessor(
     Returns:
         (mensagem_whatsapp, resumo_interno)
     """
+    api_key = config.gemini_api_key
     genai.configure(api_key=api_key)
     ficheiro = genai.upload_file(caminho_pdf)
 
